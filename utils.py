@@ -3,15 +3,15 @@ class CogitareLabsPoseIDExtractor:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "pose_keypoint": ("POSE_KEYPOINT",),
+                "POSE_KEYPOINT": ("POSE_KEYPOINT",),
             },
             "optional": {
                 "person_number": ("INT", { "default": 0 }),
             }
         }
 
-    RETURN_TYPES = ("STRING")
-    RETURN_NAMES = ("pointids")
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("POINT IDs",)
     FUNCTION = "detect_pointids"
     CATEGORY = "utils"
 
