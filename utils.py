@@ -3,7 +3,7 @@ class CogitareLabsPoseIDExtractor:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "POSE_KEYPOINT": ("POSE_KEYPOINT",),
+                "pose_keypoint": ("pose_keypoint",),
             },
             "optional": {
                 "person_number": ("INT", { "default": 0 }),
